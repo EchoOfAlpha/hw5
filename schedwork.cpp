@@ -47,13 +47,6 @@ bool schedule(
     {
         vector<Worker_T> workers;
         sched.push_back(workers);
-
-        // inner for loop goes through each worker - currently not being used
-        // for(size_t j = 0; j < dailyNeed; j++)
-        // {
-        //     //sched[i].push_back(INVALID_ID);
-        // }
-
     }
 
     if(scheduleHelper(avail, dailyNeed, maxShifts, sched, hours, 0, numWorkers))
